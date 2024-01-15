@@ -116,7 +116,117 @@ $ButtonBorderRadius: 8px;
             }
         }
     }
-
+    /*--------Banner Section-----------*/
+    .banner_section{
+        max-width: 1320px;
+        margin: auto;
+        height: 600px;
+        @include DivStyle(flex, space-between, center);
+        .banner_content{
+            width: 45%;
+            h1{
+                font-size: $TextTitle;
+                font-weight: 600;
+                line-height: 1.2;
+                span{
+                    font-weight: 700;
+                }
+            }
+            p{
+                font-size: $TextParagraph;
+                color: #333333;
+                font-weight: 500;
+                margin: 20px 0px;
+            }
+            .banner_btn{
+                .buttons{
+                    width: 100%;
+                    @include DivStyle(flex, space-between, center);
+                    button{
+                        @include buttonStyle;
+                        width: 47%;
+                    }
+                }
+                .select{
+                    width: 100%;
+                    position: relative;
+                    i{
+                        position: absolute;
+                        right: 15px;
+                        top: 30px;
+                        transform: translateY(-50%);
+                        font-size: 20px;
+                        color: #333333;
+                    }
+                    select {
+                        @include selectStyle;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        background-color: $BackgroundColor-Secondary;
+                        border: none;
+                        margin-top: 10px;
+                        cursor: inherit;
+                      }
+                    .select {
+                        align-items: center;
+                        min-width: 15ch;
+                        max-width: 30ch;
+                        border: none;
+                        border-radius: 0.25em;
+                        padding: 0.25em 0.5em;
+                        font-size: 1.25rem;
+                        cursor: pointer;
+                        line-height: 1.1;
+                        background-color: $BackgroundColor-Secondary;
+                        background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+                        option {
+                          font-weight: normal;
+                        }
+                    } 
+                }
+            }
+        }
+        .banner_image{
+            width: 45%;
+            img{
+                width: 95%;
+            }
+        }
+    }
+    /*--------About Section-----------*/
+    .about_section{
+        max-width: 1320px;
+        margin: auto;
+        padding: 100px 0px;
+        @include DivStyle(flex, space-between, center);
+        .about_content{
+            width: 45%;
+            h2{
+                font-size: $TextSubTitle;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: $TextParagraph;
+                color: #333333;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .about_btn{
+                button{
+                    @include buttonStyle;
+                    width: 100%;
+                }
+            }
+        }
+        .about_image{
+            width: 45%;
+            img{
+                width: 100%;
+            }
+        }
+    }
 }
 
 
