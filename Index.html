@@ -1,19 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UberEats</title>
     <!-- Link To CSS File-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./dist/style.css" />
     <!-- Fortawesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Google Fonts(Poppins) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Mulish:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Mulish:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!---------- Header Section ----------->
+      <header class="header_section">
+        <div class="header_logo">
+            <h2>Uber<span>Eats</span></h2>
+        </div>
+        <div class="header_menu">
+          <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Shop</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header_icons">
+          <button><i class="fas fa-search"></i></button>
+          <button><i class="fas fa-shopping-cart"></i></button>
+        </div>
+      </header>
+      <!---------- Banner Section ----------->
+      <section class="banner_section">
+        <div class="banner_content">
+          <h1>Savor the Flavors <br>
+            Order with Ease</h1>
+          <p>
+            Savor the Flavors, Order with Ease - Indulge in a gastronomic journey with
+            our curated menu of delectable dishes. Explore a world of culinary delights
+            and order with unparalleled.
+          </p>
+          <div class="banner_btn">
+            <div class="buttons">
+              <button href="#">Livraison</button>
+              <button href="#">Click & Collect</button>
+            </div>
+            <div class="select">
+              <select id="standard-select">
+                <option selected disabled>Select Location</option>
+                <option value="MD">Motijheel, Dhaka</option>
+                <option value="JD">Jatrabari, Dhaka</option>
+                <option value="PF">Paris, France</option>
+                <option value="DD">Dhanmondi, Dhaka</option>
+                <option value="MoD">Muhammodpur, Dhaka</option>
+                <option value="UV">Uttara, Dhaka</option>
+              </select>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="banner_image">
+          <img src="/assets/banner_image.png" alt="banner" />
+        </div>
+      </section>
+      <!---------- About Section ----------->
+      <section class="about_section">
+        <div class="about_content">
+          <div class="about_image">
+            <img src="/assets/about_image.png" alt="about" />
+          </div>
+          <div class="about_text">
+            <h1>About Us</h1>
+            <p>
+              Uber Eats is an American online food ordering and delivery platform
+              launched by Uber in 2014 and based in San Francisco, California. Users
+              can read menus, reviews and ratings, order and pay for food from
+              participating restaurants using an application on the iOS or Android
+              platforms, or through a web browser. Users can order from any
+              participating restaurant within their operating radius.
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>

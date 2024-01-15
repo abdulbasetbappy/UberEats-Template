@@ -1,0 +1,122 @@
+/*-------- Browser Reset -----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------Global Color-----------*/
+$BackgroundColor: #f5f5f5;
+$BackgroundColor-Secondary: #fff;
+$ButtonBackgroundColor: #ff8800;
+$TextColor: #000000;
+/*--------Global Text-----------*/
+$TextTitle: 50px;
+$TextSubTitle: 18px;
+$TextParagraph: 16px;
+$TextSmallTitle: 24px;
+
+
+
+/*--------Global Button-----------*/
+$ButtonPadding: 10px 20px;
+$ButtonBorderRadius: 8px;
+
+@mixin buttonStyle{
+    padding: $ButtonPadding;
+    border: none;
+    outline: none;
+    border-radius: $ButtonBorderRadius;
+    background-color: $ButtonBackgroundColor;
+    color: $BackgroundColor;
+    font-size: $TextParagraph;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: darken($ButtonBackgroundColor, 10%);
+    }
+}
+
+@mixin DivStyle($display, $justify, $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin selectStyle{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: $ButtonBorderRadius;
+    font-size: $TextParagraph;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    &:focus{
+        border-color: darken(#ccc, 10%);
+    }
+}
+/*--------Container-----------*/
+.container{
+    width: 100%;
+    background-color: $BackgroundColor;
+    padding: 0px;
+    margin: 0px;
+    /*--------Header Section-----------*/	
+    .header_section{
+        max-width: 1320px;
+        margin: auto;
+        @include DivStyle(flex, space-between, center);
+        height: 108px;
+        .header_logo{
+            h2{
+                font-size: 36px;
+                font-weight: 500;
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+        .header_menu{
+            width: 345px;
+            ul{
+                @include DivStyle(flex, space-between, center);
+                li{
+                    margin: 0px 10px;
+                    a{
+                        font-size: $TextParagraph;
+                        font-weight: 500;
+                        color: $TextColor;
+                        &:hover{
+                            color: darken($TextColor, 10%);
+                        }
+                    }
+                }
+            }
+        }
+        .header_icons{
+            button{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                margin: 0px 5px;
+                &:hover{
+                    color: darken($TextColor, 10%);
+                }
+                i{
+                    font-size: 24px;
+                    color: $TextColor;
+                }
+            }
+        }
+    }
+
+}
+
+
