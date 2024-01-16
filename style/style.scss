@@ -196,35 +196,77 @@ $ButtonBorderRadius: 8px;
     }
     /*--------About Section-----------*/
     .about_section{
-        max-width: 1320px;
+        max-width: 100%;
         margin: auto;
         padding: 100px 0px;
-        @include DivStyle(flex, space-between, center);
+        height:700px;
+        background-color: $BackgroundColor-Secondary;
         .about_content{
-            width: 45%;
-            h2{
-                font-size: $TextSubTitle;
-                font-weight: 600;
-                margin-bottom: 20px;
+            display: flex;
+            position: relative;
+            .about_firstimage{
+                border: none;
+                width: 35%;
+                img{
+                    width: 100%;
+                }
             }
-            p{
-                font-size: $TextParagraph;
-                color: #333333;
-                font-weight: 500;
-                margin-bottom: 20px;
+            .about_secondimage{
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 25%;
+                img{
+                    width: 100%;
+                }
             }
-            .about_btn{
+            .about_text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding-left: 50px;
+                max-width: 676px;
+                h2{
+                    font-size: 50px;
+                    line-height: 130%x;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+                .p_subtitle{
+                    font-size: $TextSubTitle;
+                    font-weight: 600;
+                    color: $ButtonBackgroundColor;
+                }
+                .p_paragraph{
+                    font-size: $TextParagraph;
+                    font-weight: 500;
+                    line-height: 160%;
+                    color: #333333;
+                    margin: 20px 0px;
+                }
+
                 button{
                     @include buttonStyle;
-                    width: 100%;
+                    width: auto;
+                    position: relative;
+                    i{
+                        position: absolute;
+                        top: 0;
+                        right: -33px;
+                        margin-left: 10px;
+                        background-color: #FFAA4D;
+                        padding: 15px;
+                        border-radius: 8px;
+                    }
                 }
             }
         }
         .about_image{
-            width: 45%;
-            img{
-                width: 100%;
-            }
+
         }
     }
 }
