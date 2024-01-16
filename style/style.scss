@@ -232,7 +232,7 @@ $ButtonBorderRadius: 8px;
                 max-width: 676px;
                 h2{
                     font-size: 50px;
-                    line-height: 130%x;
+                    line-height: 130%;
                     font-weight: 600;
                     margin-bottom: 20px;
                 }
@@ -267,6 +267,120 @@ $ButtonBorderRadius: 8px;
         }
         .about_image{
 
+        }
+    }
+    /*--------Contact Section-----------*/
+    .contact_section{
+        max-width: 1320px;
+        margin: auto;
+        padding: 100px 0px;
+        .contact_title{
+            text-align: center;
+            font-size: $TextSmallTitle;
+            font-weight: 600;
+            p{
+                font-size: $TextSubTitle;
+                font-weight: 500;
+                color: #333333;
+                margin: 10px 0px;
+            }
+        }
+        .contact_details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin: 50px 0px;
+            .contact_form{
+                display: flex;
+                justify-items: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #c5c5c5; 
+                padding: 30px 0px; 
+                border-radius: 18px;
+                width: 35%;
+                margin-right: 30px;
+                input{
+                    width: 85%;
+                    margin-top: 10px;
+                    padding: 15px 20px;
+                    color: #333333;
+                    font-size: $TextParagraph;
+                    border: none;
+                    outline: none;
+                    border-radius: $ButtonBorderRadius;
+                    font-size: $TextParagraph;
+                    font-weight: 500;
+                    transition: all 0.3s ease-in-out;
+                    &:focus{
+                        border-color: darken(#ccc, 10%);
+                    }
+                }
+                textarea{
+                    width: 85%;
+                    margin-top: 10px;
+                    padding: 15px 20px;
+                    color: #333333;
+                    font-size: $TextParagraph;
+                    border: none;
+                    outline: none;
+                    border-radius: $ButtonBorderRadius;
+                    font-size: $TextParagraph;
+                    font-weight: 500;
+                    transition: all 0.3s ease-in-out;
+                    &:focus{
+                        border-color: darken(#ccc, 10%);
+                    }
+                }
+                button{
+                    @include buttonStyle;
+                    width: 85%;
+                    margin-top: 10px;
+                }
+
+            }
+            .map{
+                margin-left: 30px;
+                width: 35%;
+                iframe{
+                    border-radius: 18px;
+                    width: 100%;
+                    max-height: 675px;
+                }
+            }
+        }
+        .contact_text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            .contact_email{
+                margin: 0px 20px;
+                border-radius: 18px;
+                background-color: #bebebe;
+                padding: 25px 35px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-direction: row;
+                .logo{
+                    @include DivStyle(flex, center, center);
+                }
+                .contact_email_details{
+                    margin-left: 20px;
+                    h3{
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #333333;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #333333;
+                    }
+                }
+            }
         }
     }
 }
