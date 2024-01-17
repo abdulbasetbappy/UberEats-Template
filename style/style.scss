@@ -402,14 +402,44 @@ $ButtonBorderRadius: 8px;
     align-items: start;
     justify-content: center;
     padding: 50px 20px;
+
     .footer_section1 {
-      max-width: 355px;
+        width: 40%;
       margin: 0px 50px;
+      .logo{
+        h1{
+          font-size: 36px;
+          font-weight: 500;
+          span{
+            font-weight: 600;
+          }
+        }
+      }
+      .icon_div{
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 20px;
+            width: 30px;
+            height: 30px;
+            color: #fdfdfd;
+            background-color: #ff8800;
+        }
+      }
     }
     .footer_section2 {
+        width: 20%;
       margin: 0px 50px;
     }
     .footer_section3 {
+        width: 20%;
       margin: 0px 50px;
       position: relative;
       input {
@@ -429,16 +459,19 @@ $ButtonBorderRadius: 8px;
         }
       }
       i {
+        width: fit-content;
+        color: #fff;
         position: absolute;
-        right: 0;
-        top: 50px;
-        padding: 15px;
+        right: -32px;
+        top: 38px;
+        padding: 19px;
         background-color: #ffaa4d;
         border-radius: 8px;
         font-size: 16px;
       }
     }
     .footer_section4 {
+        width: 20%;
       margin: 0px 50px;
       .app {
         margin-bottom: 20px;
@@ -449,4 +482,11 @@ $ButtonBorderRadius: 8px;
       }
     }
   }
+  .credit{
+    text-align: center;
+    padding: 8px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+  };
 }
