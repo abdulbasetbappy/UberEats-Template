@@ -6,6 +6,7 @@
     <title>UberEats</title>
     <!-- Link To CSS File-->
     <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="./dist/responsive.css">
     <!-- Fortawesome CDN -->
     <link
       rel="stylesheet"
@@ -45,6 +46,9 @@
         <div class="header_icons">
           <button><i class="fas fa-search"></i></button>
           <button><i class="fas fa-shopping-cart"></i></button>
+        </div>
+        <div class="menu_icon">
+          <i class="fas fa-bars"></i>
         </div>
       </header>
       <!---------- Banner Section ----------->
@@ -106,7 +110,7 @@
         </div>
       </section>
       <!---------- Contact Section ----------->
-      <section>
+      <section class="Contact_container">
         <div class="contact_section">
           <div class="contact_title">
             <p>Contact Us</p>
@@ -157,6 +161,40 @@
           </div>
         </div>
       </section>
+      <!---------- Footer Section ----------->
+      <div class="footer_section">
+        <div class="footer_section1">
+          <div class="logo">
+            <h1>Uber<span>Eats</span></h1>
+          </div>
+          <p>Uber Eats offers pizza, salad, pasta, Tex-Mex,
+            sandwich, burger and croque menus, with
+            lunch menus, halal options and free delivery
+            in zone 75/7.
+          </p>
+          <div class="icon_div">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="footer_section2">
+          <h3 class="Section2_title">Location</h3>
+          <p>123 Islamic Street, <br> Dhaka, Bangladesh</p>
+        </div>
+        <div class="footer_section3">
+          <h3 class="Section2_title">Subscribe</h3>
+          <input type="email" placeholder="Enter Your Email">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="footer_section4">
+          <h3 class="Section2_title">Application</h3>
+          <div class="app">
+            <img src="./assets/google.png" alt="Google-Playstore">
+            <img src="./assets/apple.png" alt="Apple-Store">
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
