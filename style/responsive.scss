@@ -1,208 +1,262 @@
-@media only screen and (max-width: 768px) {
-  html,
-  body {
+//Responsive Breakpoint Mixins
+@mixin respond-to($min-width, $max-width: null) {
+  @if $max-width {
+    @media screen and (min-width: $min-width) and (max-width: $max-width) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $min-width) {
+      @content;
+    }
+  }
+}
+//Rest All Defaults in Browser 
+@mixin browser-reset {
+  body, html {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     overflow-x: hidden;
   }
-  /*--------Header Section-----------*/
-  .header_section {
+}
+//Responsive On Mobile
+@include respond-to(0px, 768px) {
+  @include browser-reset;
+  .container {
     max-width: 768px;
     margin: auto;
-    height: auto;
-    padding: 0px 30px;
-    .header_logo {
-      h2 {
-        font-size: 36px;
-        font-weight: 500;
-        span {
-          font-weight: 600;
-        }
-      }
-    }
-    .header_menu {
-      display: none;
-    }
-    .header_icons {
-      display: none;
-    }
-    .menu_icon {
-      display: block !important;
-      margin-right: 20px !important;
-      font-size: 20px !important;
-      text-align: right;
-    }
-  }
-  /*--------Banner Section-----------*/
-  .banner_section {
-    max-width: 768px;
-    margin: auto;
-    height: auto;
-    padding-bottom: 50px;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: flex-start !important;
-    .banner_content {
-      width: 768px !important;
-      margin-left: 80px;
-      h1 {
-        font-size: 36px !important;
-        font-weight: 500;
-      }
-      p {
-        font-size: 14px !important;
-        font-weight: 400;
-        max-width: 350px !important;
-      }
-      .banner_btn {
-        max-width: 50%;
-        margin-top: 20px !important;
-        button {
-          padding: 10px 15px !important;
-          font-size: 14px !important;
-        }
-      }
-    }
-    .banner_image {
-      width: 100%;
+    /*--------Header Section-----------*/
+    .header_section {
+      max-width: 100%;
       margin: auto;
-      img {
-        width: 100% !important;
-        height: 100% !important;
-      }
-    }
-  }
-  /*--------About Section-----------*/
-  .about_section {
-    max-width: 768px;
-    margin: auto;
-    height: auto;
-    padding-bottom: 50px;
-    .about_firstimage {
-      display: none;
-    }
-    .about_content {
-      width: 100%;
-      margin: auto;
-      .about_text {
-        max-width: 500px !important;
+      height: auto;
+      padding: 0px 30px;
+      .header_logo {
         h2 {
+          font-size: 36px;
+          font-weight: 500;
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+      .header_menu {
+        display: none;
+      }
+      .header_icons {
+        display: none !important;
+      }
+      .menu_icon {
+        display: block !important;
+        margin-right: 20px !important;
+        font-size: 20px !important;
+        text-align: right;
+      }
+    }
+    /*--------Banner Section-----------*/
+    .banner_section {
+      max-width: 768px;
+      margin: auto;
+      height: auto;
+      padding-bottom: 50px;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      align-items: flex-start !important;
+      .banner_content {
+        width: 768px !important;
+        margin-left: 80px;
+        h1 {
           font-size: 36px !important;
-          font-weight: 600 !important;
+          font-weight: 500;
         }
         p {
           font-size: 14px !important;
-          font-weight: 500 !important;
-          margin: 15px 0px !important;
+          font-weight: 400;
+          max-width: 350px !important;
         }
-        button {
-          padding: 10px 20px !important;
-          font-size: 14px !important;
-          i{
-            padding: 14px  !important;
+        .banner_btn {
+          max-width: 50%;
+          margin-top: 20px !important;
+          button {
+            padding: 10px 15px !important;
+            font-size: 14px !important;
+          }
+        }
+      }
+      .banner_image {
+        width: 100%;
+        margin: auto;
+        img {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+    }
+    /*--------About Section-----------*/
+    .about_section {
+      max-width: 768px;
+      margin: auto;
+      height: auto;
+      padding-bottom: 50px;
+      .about_firstimage {
+        display: none;
+      }
+      .about_content {
+        width: 100%;
+        margin: auto;
+        .about_text {
+          max-width: 500px !important;
+          h2 {
+            font-size: 36px !important;
+            font-weight: 600 !important;
+          }
+          p {
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            margin: 15px 0px !important;
+          }
+          button {
+            padding: 10px 20px !important;
+            font-size: 14px !important;
+            i {
+              padding: 14px !important;
+            }
+          }
+        }
+      }
+      .about_secondimage {
+      }
+    }
+    /*--------Contact Section-----------*/
+    .Contact_container {
+      .contact_section {
+        .contact_details {
+          flex-direction: column !important;
+          .contact_form {
+            width: 85% !important;
+            margin: auto !important;
+            margin-bottom: 50px !important;
+          }
+          .map {
+            width: 85% !important;
+            margin: auto !important;
+          }
+        }
+        .contact_text {
+          width: 100% !important;
+          margin: auto !important;
+          flex-direction: column !important;
+          .contact_email {
+            margin: 10px 0px !important;
+            width: 60% !important;
+            .contact_email_details {
+              h3 {
+                font-size: 18px !important;
+                font-weight: 600 !important;
+              }
+              p {
+                font-size: 14px !important;
+                font-weight: 500 !important;
+              }
+            }
           }
         }
       }
     }
-    .about_secondimage {
-    }
-  }
-  /*--------Contact Section-----------*/
-  .Contact_container {
-    .contact_section {
-      .contact_details {
-        flex-direction: column !important;
-        .contact_form {
-          width: 85% !important;
-          margin: auto !important;
-          margin-bottom: 50px !important;
+    /*--------Footer Section-----------*/
+    .footer_section {
+      display: grid !important;
+      height: auto !important;
+      grid-template-columns: 3fr 2fr !important;
+      .footer_section1 {
+        width: 50% !important;
+        margin-bottom: 10px;
+        .logo {
+          h1 {
+            font-size: 28px;
+          }
         }
-        .map {
-          width: 85% !important;
-          margin: auto !important;
+        p {
+          font-size: 14px;
+          width: 140% !important;
+        }
+        .icon_div {
+          margin-top: 8px !important;
+          i {
+            font-size: 16px;
+            padding: 6px;
+          }
         }
       }
-      .contact_text {
+      .footer_section2 {
+        width: 50% !important;
+        .Section2_title {
+          font-size: 21px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .footer_section3 {
         width: 100% !important;
-        margin: auto !important;
-        flex-direction: column !important;
-        .contact_email {
-          margin: 10px 0px !important;
-          width: 60% !important;
-          .contact_email_details {
-            h3 {
-              font-size: 18px !important;
-              font-weight: 600 !important;
-            }
-            p {
-              font-size: 14px !important;
-              font-weight: 500 !important;
-            }
-          }
+        .Section2_title {
+          font-size: 21px;
+        }
+        input {
+          width: 180px !important;
+        }
+        i {
+          left: 164px !important;
+          top: 42px !important;
+        }
+      }
+      .footer_section4 {
+        width: 100% !important;
+        .Section2_title {
+          font-size: 21px;
+        }
+        .app {
+          width: 60%;
+          margin-top: 10px;
         }
       }
     }
   }
-  /*--------Footer Section-----------*/
-  .footer_section {
-    display: grid !important;
-    height: auto !important;
-    grid-template-columns: 3fr 2fr !important;
-    .footer_section1 {
-        width: 50%  !important;
-      margin-bottom: 10px ;
-      .logo{
-        h1{
-            font-size: 28px ;
-        }
-      }
-      p{
-        font-size: 14px ;
-        width: 140% !important;
-      }
-      .icon_div{
-        margin-top: 8px !important;
-        i{
-          font-size: 16px;
-          padding: 6px;
+};
 
+//Responsive On Tablet
+@include respond-to (769px, 1024px){
+  @include browser-reset;
+  .container{
+    max-width: 1024px;
+    margin: auto;
+    /*--------Header Section-----------*/
+    .header_section{
+      max-width: 100%;
+      margin: auto;
+      height: auto;
+      padding: 20px 30px;
+      .header_logo{
+        h2{
+          font-size: 32px;
+          font-weight: 500;
         }
       }
-    }
-    .footer_section2 {
-        width: 50%  !important;
-        .Section2_title{
-            font-size: 21px ;
+      .header_icons{
+        button{
+          i{
+            font-size: 20px;
+          }
         }
-        p{
-            font-size: 14px ;
-        }
-    }
-    .footer_section3 {
-        width: 100%  !important;
-        .Section2_title{
-            font-size: 21px ;
-        }
-        input{
-            width: 180px !important;
-        }
-        i{
-            left: 164px !important;
-            top: 42px !important;
-        }
-
-    }
-    .footer_section4 {
-        width: 100%  !important;
-        .Section2_title{
-            font-size: 21px ;
-        }
-      .app {
-        width: 60%;
-        margin-top: 10px;
+      }
+      .menu_icon{
+        display: none !important;
       }
     }
   }
 }
+
