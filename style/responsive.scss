@@ -136,32 +136,32 @@
     .Contact_container {
       .contact_section {
         .contact_details {
-          flex-direction: column !important;
+          flex-direction: column ;
           .contact_form {
-            width: 85% !important;
-            margin: auto !important;
-            margin-bottom: 50px !important;
+            width: 75% ;
+            margin: auto ;
+            margin-bottom: 50px ;
           }
           .map {
-            width: 85% !important;
-            margin: auto !important;
+            width: 75% ;
+            margin: auto ;
           }
         }
         .contact_text {
-          width: 100% !important;
-          margin: auto !important;
-          flex-direction: column !important;
+          width: 100% ;
+          margin: auto ;
+          flex-direction: column ;
           .contact_email {
-            margin: 10px 0px !important;
-            width: 60% !important;
+            margin: 10px 0px ;
+            width: 60%;
             .contact_email_details {
               h3 {
-                font-size: 18px !important;
-                font-weight: 600 !important;
+                font-size: 18px;
+                font-weight: 600;
               }
               p {
-                font-size: 14px !important;
-                font-weight: 500 !important;
+                font-size: 14px;
+                font-weight: 500;
               }
             }
           }
@@ -334,4 +334,19 @@
 }
 
 //Responsive On Desktop
+@include respond-to (1025px, 1440px){
+  @include browser-reset;
+  .container{
+    max-width: 1420px;
+    margin: auto;
+    /*--------Header Section-----------*/
+    .header_section{
+      padding: 20px 30px;
+    }
+    /*--------Banner Section-----------*/
+    .banner_section{
+      padding: 20px 30px;
+    }
+  }
+}
 
