@@ -88,11 +88,12 @@
         }
       }
       .banner_image {
-        width: 100%;
+        width: 60%;
         margin: auto;
+        margin-bottom: 30px;
         img {
-          width: 100% !important;
-          height: 100% !important;
+          width: 100% ;
+          height: 100% ;
         }
       }
     }
@@ -278,6 +279,59 @@
         }
       }
     }
+    /*--------About Us Section-----------*/
+    .about_section{
+      .about_content{
+        .about_text{
+          h2{
+            font-size: 32px ;
+          }
+          p{
+            font-size: 14px ;
+            max-width: 450px;
+          }
+          button{
+            padding: 10px 20px ;
+            font-size: 14px ;
+            i{
+              padding: 14px ;
+            }
+          }
+        }
+      }
+    }
+    /*--------Contact Us Section-----------*/
+    .Contact_container{
+      .contact_section{
+        .contact_details{
+          .contact_form{
+            width: 42% ;
+            margin-left: 5px;
+          }
+          .map{
+            margin-left: 5px;
+            width: 42% ;
+          }
+        }
+        .contact_text{
+          flex-wrap: wrap;
+          .contact_email{
+            margin: 15px;
+            width: 400px ;
+            .logo{
+              img{
+                width: 50px;
+                height: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*--------Footer Section-----------*/
+
   }
 }
+
+//Responsive On Desktop
 
