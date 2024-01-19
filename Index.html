@@ -6,7 +6,7 @@
     <title>UberEats</title>
     <!-- Link To CSS File-->
     <link rel="stylesheet" href="./dist/style.css" />
-    <link rel="stylesheet" href="./dist/responsive.css">
+    <link rel="stylesheet" href="./dist/responsive.css" />
     <!-- Fortawesome CDN -->
     <link
       rel="stylesheet"
@@ -28,18 +28,18 @@
       <!---------- Header Section ----------->
       <header class="header_section">
         <div class="header_logo">
-            <h2>Uber<span>Eats</span></h2>
+          <h2>Uber<span>Eats</span></h2>
         </div>
         <div class="header_menu">
           <ul>
             <li>
-                <a href="#">Home</a>
+              <a href="#">Home</a>
             </li>
             <li>
-                <a href="#">About</a>
+              <a href="#">About</a>
             </li>
             <li>
-                <a href="#">Shop</a>
+              <a href="#">Shop</a>
             </li>
           </ul>
         </div>
@@ -54,12 +54,14 @@
       <!---------- Banner Section ----------->
       <section class="banner_section">
         <div class="banner_content">
-          <h1>Savor the Flavors <br>
-            Order with Ease</h1>
+          <h1>
+            Savor the Flavors <br />
+            Order with Ease
+          </h1>
           <p>
-            Savor the Flavors, Order with Ease - Indulge in a gastronomic journey with
-            our curated menu of delectable dishes. Explore a world of culinary delights
-            and order with unparalleled.
+            Savor the Flavors, Order with Ease - Indulge in a gastronomic
+            journey with our curated menu of delectable dishes. Explore a world
+            of culinary delights and order with unparalleled.
           </p>
           <div class="banner_btn">
             <div class="buttons">
@@ -92,23 +94,663 @@
           </div>
           <div class="about_text">
             <p class="p_subtitle">About Us</p>
-            <h2>Discover Our<br>
-              Restaurant Story</h2>
+            <h2>
+              Discover Our<br />
+              Restaurant Story
+            </h2>
             <p class="p_paragraph">
-              Uber Eats is an American online food ordering and delivery platform
-              launched by Uber in 2014 and based in San Francisco, California. Users
-              can read menus, reviews and ratings, order and pay for food from
-              participating restaurants using an application on the iOS or Android
-              platforms, or through a web browser. Users can order from any
-              participating restaurant within their operating radius.
+              Uber Eats is an American online food ordering and delivery
+              platform launched by Uber in 2014 and based in San Francisco,
+              California. Users can read menus, reviews and ratings, order and
+              pay for food from participating restaurants using an application
+              on the iOS or Android platforms, or through a web browser. Users
+              can order from any participating restaurant within their operating
+              radius.
             </p>
-            <button>Discover Our Menu <i class="fa-solid fa-arrow-right"></i></button>
+            <button>
+              Discover Our Menu <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
           <div class="about_secondimage">
             <img src="/assets/about00.png" alt="about" />
           </div>
         </div>
       </section>
+      <!---------- Menu Section ----------->
+      <div class="tabs_section">
+        <div class="tab_header">
+          <p class="p_subtitle">Menu</p>
+          <h2>Our Popular Menu</h2>
+        </div>
+        <div class="tab_details">
+          <div class="tabs-container">
+            <div class="tab active-tab" data-tab="tab1" onclick="openTab('tab1')">
+              Popular
+            </div>
+            <div class="tab" data-tab="tab2" onclick="openTab('tab2')">
+              Pizza
+            </div>
+            <div class="tab" data-tab="tab3" onclick="openTab('tab3')">
+              Tacos
+            </div>
+            <div class="tab" data-tab="tab4" onclick="openTab('tab4')">
+              Burger
+            </div>
+            <div class="tab" data-tab="tab5" onclick="openTab('tab5')">
+              Desert
+            </div>
+            <div class="tab" data-tab="tab6" onclick="openTab('tab6')">
+              Drinks
+            </div>
+          </div>
+
+          <div id="tab1" class="tab-content active">
+            <div class="item-container">
+              <!-- Item 1 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 2 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 3 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 4 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 5 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 6 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 7 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 8 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="tab2" class="tab-content">
+            <div class="item-container">
+              <!-- Item 1 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 2 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 3 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 4 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 5 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 6 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 7 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 8 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="tab3" class="tab-content">
+            <div class="item-container">
+              <!-- Item 1 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 2 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 3 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 4 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 5 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="tab4" class="tab-content">
+            <div class="item-container">
+              <!-- Item 1 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 2 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 3 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 4 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 5 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="tab5" class="tab-content">
+            <div class="item-container">
+              <!-- Item 1 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 2 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 3 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 4 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 5 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="tab6" class="tab-content">
+            <div class="item-container">
+              <!-- Item 1 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 2 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 3 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 4 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p><span>23.99</span>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+              <!-- Item 5 -->
+              <div class="item">
+                <img src="./assets/Items/Burger.jpg" alt="Item 1" />
+                <h3>Chicken Burger</h3>
+                <p>$19.99</p>
+                <div class="ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <button onclick="addToCart('Item 1', 19.99)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_div">
+          <button>
+            Discover Our Menu <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
       <!---------- Contact Section ----------->
       <section class="Contact_container">
         <div class="contact_section">
@@ -118,19 +760,43 @@
           </div>
           <div class="contact_details">
             <div class="contact_form">
-              <input type="text" name="name" placeholder="Enter Your Name" id="">
-              <input type="emial" name="email" placeholder="Enter Your Email" id="">
-              <textarea name="details" placeholder="Message..." id="" cols="30" rows="7"></textarea>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter Your Name"
+                id=""
+              />
+              <input
+                type="emial"
+                name="email"
+                placeholder="Enter Your Email"
+                id=""
+              />
+              <textarea
+                name="details"
+                placeholder="Message..."
+                id=""
+                cols="30"
+                rows="7"
+              ></textarea>
               <button>Submit</button>
             </div>
             <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14610.27308423812!2d90.38425380000001!3d23.72710665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8e90a449e4f%3A0xb7092a9c25197fa4!2sUniversity%20of%20Dhaka!5e0!3m2!1sen!2sbd!4v1705408275387!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14610.27308423812!2d90.38425380000001!3d23.72710665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8e90a449e4f%3A0xb7092a9c25197fa4!2sUniversity%20of%20Dhaka!5e0!3m2!1sen!2sbd!4v1705408275387!5m2!1sen!2sbd"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <div class="contact_text">
             <div class="contact_email">
               <div class="logo">
-                <img src="./assets/gmail02.png" alt="">
+                <img src="./assets/gmail02.png" alt="" />
               </div>
               <div class="contact_email_details">
                 <h3>Email</h3>
@@ -140,7 +806,7 @@
             </div>
             <div class="contact_email">
               <div class="logo">
-                <img src="./assets/phone01.png" alt="">
+                <img src="./assets/phone01.png" alt="" />
               </div>
               <div class="contact_email_details">
                 <h3>Phone</h3>
@@ -150,7 +816,7 @@
             </div>
             <div class="contact_email">
               <div class="logo">
-                <img src="./assets/location00.png" alt="">
+                <img src="./assets/location00.png" alt="" />
               </div>
               <div class="contact_email_details">
                 <h3>Location</h3>
@@ -167,10 +833,10 @@
           <div class="logo">
             <h1>Uber<span>Eats</span></h1>
           </div>
-          <p>Uber Eats offers pizza, salad, pasta, Tex-Mex,
-            sandwich, burger and croque menus, with
-            lunch menus, halal options and free delivery
-            in zone 75/7.
+          <p>
+            Uber Eats offers pizza, salad, pasta, Tex-Mex, sandwich, burger and
+            croque menus, with lunch menus, halal options and free delivery in
+            zone 75/7.
           </p>
           <div class="icon_div">
             <i class="fa-brands fa-facebook"></i>
@@ -180,24 +846,30 @@
         </div>
         <div class="footer_section2">
           <h3 class="Section2_title">Location</h3>
-          <p>123 Islamic Street, <br> Dhaka, Bangladesh</p>
+          <p>
+            123 Islamic Street, <br />
+            Dhaka, Bangladesh
+          </p>
         </div>
         <div class="footer_section3">
           <h3 class="Section2_title">Subscribe</h3>
-          <input type="email" placeholder="Enter Your Email">
+          <input type="email" placeholder="Enter Your Email" />
           <i class="fa-solid fa-arrow-right"></i>
         </div>
         <div class="footer_section4">
           <h3 class="Section2_title">Application</h3>
           <div class="app">
-            <img src="./assets/google.png" alt="Google-Playstore">
-            <img src="./assets/apple.png" alt="Apple-Store">
+            <img src="./assets/google.png" alt="Google-Playstore" />
+            <img src="./assets/apple.png" alt="Apple-Store" />
           </div>
         </div>
       </div>
       <!-- Credit -->
-      <hr>
-      <h1 class="credit">Develop by wetechpro.com</>
+      <hr />
+      <h1 class="credit">Develop by wetechpro.com</h1>
     </div>
+
+    <!-- Link To JS File-->
+    <script src="./main.js"></script>
   </body>
 </html>
