@@ -24,7 +24,310 @@
   }
 }
 //Responsive On Mobile
-@include respond-to(0px, 768px) {
+@include respond-to(0px, 400px) {
+  @include browser-reset;
+  .container {
+    max-width: 400px;
+    margin: auto;
+    /*--------Header Section-----------*/
+    .header_section {
+      max-width: 100%;
+      margin: auto;
+      height: auto;
+      padding: 0px 20px;
+      .header_logo {
+        h2 {
+          font-size: 30px;
+          font-weight: 500;
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+      .header_menu {
+        display: none;
+      }
+      .header_icons {
+        display: none !important;
+      }
+      .menu_icon {
+        display: block !important;
+        font-size: 20px !important;
+        text-align: right;
+      }
+    }
+    /*--------Banner Section-----------*/
+    .banner_section {
+      max-width: 400px;
+      margin: auto;
+      height: auto;
+      padding-bottom: 40px;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .banner_content {
+        width: 768px ;
+padding: 20px;
+        h1 {
+          font-size: 30px;
+          font-weight: 500;
+        }
+        p {
+          font-size: 12px ;
+          font-weight: 400;
+          max-width: 320px;
+        }
+        .banner_btn {
+          max-width: 40%;
+          margin-top: 20px;
+          button {
+            padding: 10px 15px !important;
+            font-size: 14px !important;
+          }
+        }
+      }
+      .banner_image {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 30px;
+        img {
+          width: 100% ;
+          height: 100% ;
+        }
+      }
+    }
+    /*--------About Section-----------*/
+    .about_section {
+      max-width: 400px;
+      margin: auto;
+      height: auto;
+      padding: 50px 0px;
+      .about_firstimage {
+        display: none;
+      }
+      .about_content {
+        width: 100%;
+        padding: 20px;
+        .about_text {
+          max-width: 500px ;
+          padding-left: 0px;
+          h2 {
+            font-size: 30px ;
+            font-weight: 600 ;
+            margin-bottom: 10px;
+          }
+          .p_subtitle{
+            font-size: 14px ;
+            font-weight: 500 ;
+            margin: 0px 0px ;
+          }
+          .p_paragraph{
+            font-size: 14px ;
+            font-weight: 500 ;
+            margin: 10px 0px ;
+          }
+          button {
+            padding: 10px 20px ;
+            font-size: 14px ;
+            i {
+              padding: 14px ;
+            }
+          }
+        }
+      }
+      .about_secondimage {
+        width: 60% !important;
+      }
+    }
+    /*--------Menu Section-----------*/
+    .tabs_section{
+      max-width: 400px;
+      .tab_header{
+        .p_subtitle{
+          font-size: 14px;
+        }
+        h2{
+          font-size: 30px;
+        }
+      }
+      .tab_details{ 
+        .tabs-container{
+          display: flex;
+          flex-wrap: wrap;
+          margin: auto;
+          .tab{
+            padding: 5px 10px;
+            font-size: 14px;
+          }
+        }
+        .tab-content{
+          .item-container{
+            padding: 15px;
+            flex-direction: row;
+            .item{
+              width: 95%;
+              margin: 15px;
+              h3{
+                font-size: 18px;
+              }
+              p{
+                font-size: 14px;
+              }
+              .ratings{
+                margin: 10px 0px;
+                .fa-solid,
+                .fa-regular{
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .btn_div{
+
+      }
+    }
+    /*--------Contact Section-----------*/
+    .Contact_container {
+      .contact_section {
+        padding: 50px 0px;
+        .contact_title{
+          h2{
+            font-size: 30px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+        .contact_details {
+          flex-direction: column ;
+          .contact_form {
+            width: 85% ;
+            margin: auto ;
+            margin-bottom: 50px ;
+            input{
+              width: 90%;
+              padding: 10px;
+            }
+            textarea{
+              width: 90%;
+              padding: 10px;
+            }
+            button{
+              width: 90%;
+            }
+          }
+          .map {
+            width: 85% ;
+            margin: auto ;
+          }
+        }
+        .contact_text {
+          width: 100% ;
+          margin: auto ;
+          flex-direction: column ;
+          .contact_email {
+            margin: 10px 0px ;
+            width: 80%;
+            padding: 10px 10px;
+            .logo{
+              img{
+                width: 50px;
+                height: 50px;
+              }
+            }
+            .contact_email_details {
+              h3 {
+                font-size: 18px;
+                font-weight: 600;
+              }
+              p {
+                font-size: 14px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*--------Footer Section-----------*/
+    .footer_section {
+      display: flex ;
+      flex-direction: column;
+      height: auto ;
+      max-width: 400px ;
+      justify-content: start;
+      padding: 30px 20px 15px 20px;
+      .footer_section1 {
+        width: 50% ;
+        margin: 0px 0px;
+        .logo {
+          h1 {
+            font-size: 28px;
+          }
+        }
+        p {
+          font-size: 16px;
+          width: 180% ;
+        }
+        .icon_div {
+          margin-top: 8px ;
+          margin-bottom: 20px;
+          i {
+            font-size: 16px;
+            padding: 6px;
+          }
+        }
+      }
+      .footer_section2 {
+        width: 50%;
+        margin: 0px;
+        .Section2_title {
+          font-size: 24px;
+        }
+        p {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+      }
+      .footer_section3 {
+        width: 50% ;
+        margin: 0px;
+        margin-bottom: 20px;
+        .Section2_title {
+          font-size: 24px;
+        }
+        input {
+          width: 180px ;
+        }
+        i {
+          left: 164px ;
+          top: 45px ;
+        }
+      }
+      .footer_section4 {
+        width: 50% ;
+        margin: 0px;
+        .Section2_title {
+          font-size: 21px;
+        }
+        .app {
+          width: 60%;
+          margin-top: 10px;
+          display: flex;
+          justify-content: start;
+          img {
+            width: 125px ;
+            margin-right: 10px
+          }
+        }
+      }
+    }
+  }
+};
+//Responsive On Mobile
+@include respond-to(400px, 768px) {
   @include browser-reset;
   .container {
     max-width: 768px;
@@ -34,7 +337,7 @@
       max-width: 100%;
       margin: auto;
       height: auto;
-      padding: 0px 30px;
+      padding: 0px 20px;
       .header_logo {
         h2 {
           font-size: 36px;
@@ -52,7 +355,6 @@
       }
       .menu_icon {
         display: block !important;
-        margin-right: 20px !important;
         font-size: 20px !important;
         text-align: right;
       }
@@ -65,18 +367,18 @@
       padding-bottom: 50px;
       flex-direction: column-reverse;
       justify-content: flex-start;
-      align-items: flex-start !important;
+      align-items: flex-start;
       .banner_content {
-        width: 768px !important;
-        margin-left: 80px;
+        width: 768px ;
+padding: 20px;
         h1 {
-          font-size: 36px !important;
+          font-size: 36px;
           font-weight: 500;
         }
         p {
-          font-size: 14px !important;
+          font-size: 14px ;
           font-weight: 400;
-          max-width: 350px !important;
+          max-width: 350px;
         }
         .banner_btn {
           max-width: 50%;
@@ -108,17 +410,18 @@
       }
       .about_content {
         width: 100%;
-        margin: auto;
+        padding: 20px;
         .about_text {
-          max-width: 500px !important;
+          max-width: 500px ;
+          padding-left: 0px;
           h2 {
-            font-size: 36px !important;
-            font-weight: 600 !important;
+            font-size: 36px ;
+            font-weight: 600 ;
           }
           p {
-            font-size: 14px !important;
-            font-weight: 500 !important;
-            margin: 15px 0px !important;
+            font-size: 14px ;
+            font-weight: 500 ;
+            margin: 15px 0px ;
           }
           button {
             padding: 10px 20px !important;
@@ -145,6 +448,8 @@
       }
       .tab_details{ 
         .tabs-container{
+          display: flex;
+          flex-wrap: wrap;
           margin: 10px;
           .tab{
             padding: 5px 10px;
@@ -155,8 +460,8 @@
             padding: 15px;
             flex-direction: row;
             .item{
-              width: 45%;
-              margin: 5px;
+              width: 95%;
+              margin: 15px;
               h3{
                 font-size: 18px;
               }
@@ -181,15 +486,16 @@
     /*--------Contact Section-----------*/
     .Contact_container {
       .contact_section {
+        padding: 50px 0px;
         .contact_details {
           flex-direction: column ;
           .contact_form {
-            width: 75% ;
+            width: 85% ;
             margin: auto ;
             margin-bottom: 50px ;
           }
           .map {
-            width: 75% ;
+            width: 85% ;
             margin: auto ;
           }
         }
@@ -200,6 +506,7 @@
           .contact_email {
             margin: 10px 0px ;
             width: 60%;
+            padding: 10px 10px;
             .contact_email_details {
               h3 {
                 font-size: 18px;
@@ -216,23 +523,27 @@
     }
     /*--------Footer Section-----------*/
     .footer_section {
-      display: grid !important;
-      height: auto !important;
-      grid-template-columns: 3fr 2fr !important;
+      display: flex ;
+      flex-direction: column;
+      height: auto ;
+      max-width: 768px ;
+      justify-content: start;
+      padding: 30px 20px;
       .footer_section1 {
-        width: 50% !important;
-        margin-bottom: 10px;
+        width: 50% ;
+        margin: 0px 0px;
         .logo {
           h1 {
             font-size: 28px;
           }
         }
         p {
-          font-size: 14px;
-          width: 140% !important;
+          font-size: 16px;
+          width: 180% ;
         }
         .icon_div {
-          margin-top: 8px !important;
+          margin-top: 8px ;
+          margin-bottom: 20px;
           i {
             font-size: 16px;
             padding: 6px;
@@ -240,35 +551,46 @@
         }
       }
       .footer_section2 {
-        width: 50% !important;
+        width: 50%;
+        margin: 0px;
         .Section2_title {
-          font-size: 21px;
+          font-size: 24px;
         }
         p {
-          font-size: 14px;
+          font-size: 16px;
+          margin-bottom: 20px;
         }
       }
       .footer_section3 {
-        width: 100% !important;
+        width: 50% ;
+        margin: 0px;
+        margin-bottom: 20px;
         .Section2_title {
-          font-size: 21px;
+          font-size: 24px;
         }
         input {
-          width: 180px !important;
+          width: 180px ;
         }
         i {
-          left: 164px !important;
-          top: 42px !important;
+          left: 164px ;
+          top: 42px ;
         }
       }
       .footer_section4 {
-        width: 100% !important;
+        width: 50% ;
+        margin: 0px;
         .Section2_title {
           font-size: 21px;
         }
         .app {
           width: 60%;
           margin-top: 10px;
+          display: flex;
+          justify-content: start;
+          img {
+            width: 125px ;
+            margin-right: 10px
+          }
         }
       }
     }
